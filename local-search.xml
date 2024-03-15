@@ -4,11 +4,30 @@
   
   
   <entry>
+    <title>JavaWebReport2</title>
+    <link href="/2024/03/15/JavaWebReport2/"/>
+    <url>/2024/03/15/JavaWebReport2/</url>
+    
+    <content type="html"><![CDATA[<h3 id="绝对路径引入"><a href="#绝对路径引入" class="headerlink" title="绝对路径引入"></a>绝对路径引入</h3><p><img src="/" alt="dusk"></p><h3 id="相对路径引入"><a href="#相对路径引入" class="headerlink" title="相对路径引入"></a>相对路径引入</h3><p><img src="/../images/Sunset.jpg" alt="Sunset"></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>相对/绝对路径图片的引入</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hexo_config</title>
     <link href="/2024/03/09/Hexo-config/"/>
     <url>/2024/03/09/Hexo-config/</url>
     
-    <content type="html"><![CDATA[<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="参考-引用"><a href="#参考-引用" class="headerlink" title="参考 引用"></a>参考 引用</h3><h4 id="下载-配置"><a href="#下载-配置" class="headerlink" title="下载 配置"></a>下载 配置</h4><p><a href="http://t.csdnimg.cn/KLmKR">CSDN_Hexo教程，看这一篇就够了- How to系列</a></p><p><a href="https://gomwan.github.io/2018/03/11/hexo%E9%85%8D%E7%BD%AE/">个人博客_Mwan’s Blog</a></p><h4 id="图片插入问题"><a href="#图片插入问题" class="headerlink" title="图片插入问题"></a>图片插入问题</h4><p><a href="http://t.csdnimg.cn/s29kH">CSDN_hexo博客中插入图片失败——解决思路及个人最终解决办法</a></p><h4 id="安装配置问题"><a href="#安装配置问题" class="headerlink" title="安装配置问题"></a>安装配置问题</h4><p><a href="http://t.csdnimg.cn/FnGQK">CSDN_hexo在GitHub上创建blog，hexo-deployer-git插件包，This package is no longer maintained这个包不再被维护</a></p><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><ol><li>创建文章（Post）<blockquote><p>hexo new [postname]</p></blockquote></li></ol><p>post是文章名，可以自由更改，新建后会在&#x2F;source&#x2F;_post创建一个【文章名.md】的文件</p><ol start="2"><li><p>创建页面（Page）</p><blockquote><p>hexo new page [pagename]</p></blockquote></li><li><p>创建草稿</p><blockquote><p>hexo new draft [draftname]</p></blockquote></li></ol><p>其中【aaa】就是草稿名，虽然Hexo不会编译&#x2F;source&#x2F;_drafts下的文件，但是Hexo提供了一个预览的方法，就是：</p><blockquote><p>hexo s –draft</p></blockquote><p>草稿的正式发布<br>hexo p [draftname]</p><ol start="4"><li><p>Front-matter<br><img src="/../images/image.png" alt="alt text"><br>里面写明了文章创建的时间，标签，名字，也可以加入，分类，更改日期，评论系统是否开启等，具体见Hexo官方文档和Fluid官方配置指南全文都有<br><img src="/../images/image-1.png" alt="alt text"><br>修改默认的Front-matter的方式</p></li><li><p>启动流程</p><ul><li><code>$ hexo clean</code>清除缓存 网页正常情况下可以忽略此条命令</li><li><code>$ hexo g/ hexo generator</code>#生成静态页面至public目录</li><li><code>$ hexo d/ hexo deploy</code>#将.deploy目录部署到GitHub</li><li><code>$ hexo s/ hexo serve</code> 启动服务（本地查看）</li></ul></li></ol><h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><ol><li>插件hexo-deployer-git的安装问题<ul><li>node_modules文件夹下发现“hexo-deployer-git”文件异常</li><li>改用淘宝NPM镜像的“hexo-deployer-git”</li><li>指令<code>$ cnpm install hexo-deployer-git --save</code></li></ul></li></ol>]]></content>
+    <content type="html"><![CDATA[<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="参考-引用"><a href="#参考-引用" class="headerlink" title="参考 引用"></a>参考 引用</h3><h4 id="下载-配置"><a href="#下载-配置" class="headerlink" title="下载 配置"></a>下载 配置</h4><p><a href="http://t.csdnimg.cn/KLmKR">CSDN_Hexo教程，看这一篇就够了- How to系列</a></p><p><a href="https://gomwan.github.io/2018/03/11/hexo%E9%85%8D%E7%BD%AE/">个人博客_Mwan’s Blog</a></p><h4 id="图片插入问题"><a href="#图片插入问题" class="headerlink" title="图片插入问题"></a>图片插入问题</h4><p><a href="http://t.csdnimg.cn/s29kH">CSDN_hexo博客中插入图片失败——解决思路及个人最终解决办法</a></p><h4 id="安装配置问题"><a href="#安装配置问题" class="headerlink" title="安装配置问题"></a>安装配置问题</h4><p><a href="http://t.csdnimg.cn/FnGQK">CSDN_hexo在GitHub上创建blog，hexo-deployer-git插件包，This package is no longer maintained这个包不再被维护</a></p><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><ol><li>创建文章（Post）<blockquote><p>hexo new [postname]</p></blockquote></li></ol><p>post是文章名，可以自由更改，新建后会在&#x2F;source&#x2F;_post创建一个【文章名.md】的文件</p><ol start="2"><li><p>创建页面（Page）</p><blockquote><p>hexo new page [pagename]</p></blockquote></li><li><p>创建草稿</p><blockquote><p>hexo new draft [draftname]</p></blockquote></li></ol><p>其中【aaa】就是草稿名，虽然Hexo不会编译&#x2F;source&#x2F;_drafts下的文件，但是Hexo提供了一个预览的方法，就是：</p><blockquote><p>hexo s –draft</p></blockquote><p>草稿的正式发布<br>hexo p [draftname]</p><ol start="4"><li><p>Front-matter<br><img src="/../images/image.png" alt="alt text"><br>里面写明了文章创建的时间，标签，名字，也可以加入，分类，更改日期，评论系统是否开启等，具体见Hexo官方文档和Fluid官方配置指南全文都有<br><img src="/../images/image-1.png" alt="alt text"><br>修改默认的Front-matter的方式</p></li><li><p>启动流程</p><ul><li><code>$ hexo clean</code>清除缓存 网页正常情况下可以忽略此条命令</li><li><code>$ hexo g/ hexo generator</code>#生成静态页面至public目录</li><li><code>$ hexo d/ hexo deploy</code>#将.deploy目录部署到GitHub</li><li><code>$ hexo s/ hexo serve</code> 启动服务（本地查看）</li></ul></li><li><p>其他用法</p><ul><li><code>top: ture</code> 希望将博客置顶</li><li><code>&lt;!-- more --&gt;</code> 希望截断内容？</li><li>给博客加上便签 <figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs subunit"><span class="hljs-keyword">tags:</span><br>    - xxx笔记<br>    - xxx语言<br></code></pre></td></tr></table></figure></li></ul></li></ol><h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><ol><li>插件hexo-deployer-git的安装问题<ul><li>node_modules文件夹下发现“hexo-deployer-git”文件异常</li><li>改用淘宝NPM镜像的“hexo-deployer-git”</li><li>指令<code>$ cnpm install hexo-deployer-git --save</code></li></ul></li></ol>]]></content>
     
     
     
